@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<HTML>
+ <head>
+   <title>Школа иностранных языков "Альбион"</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="RegistCamp.css" rel="stylesheet" media="all">
+ </head>
+ <body>
+    <header class="header">
+      <div class="head1">
+        <img class="FotoAlbion" src="Foto/Albion.jpg">
+          <p class="name">Школа <br> иностранных <br> языков</p>
+            <div>
+              <table class="table">
+                <tr><td>Общий: +7 (3452) 997-808</td></tr>
+                <tr><td>Viber: +7 (992) 303-84-06</td></tr>
+                <tr><td>WhatsApp: +7 (992) 303-84-06</td></tr>
+              </table>
+            </div>
+            <div>
+              <table class="tblhours">
+                <tr><td>Часы работы:</td></tr>
+                <tr><td>Пн, Вт, Ср, Чт, Пт - с 09:00 до 18:00</td></tr>
+                <tr><td>Сб, Вс - Выходной</td></tr>
+              </table>
+            </div>
+            
+      </div>
+        <nav class="nav">
+          <ul class="ul">
+            <div class="dropdown">
+              <button class="dropbtn">О нас</button>
+                <div class="dropdown-content">
+                  <a href="About school.html">О школе</a>
+                  <a href="Teachers.html">Преподаватели</a>
+                </div>
+                </div>
+                <div class="dropdown">
+                  <button onclick="document.location='D:/Диплом/Main.html'" class="dropbtn">Главная</button>
+                </div> 
+                <div class="dropdown">
+                  <button class="dropbtn">Услуги</button>
+                  <div class="dropdown-content">
+                      <a href="Children.html">Обучение детей</a>
+                      <a href="Teenagers.html">Обучение подростков</a>
+                      <a href="Adults.html">Обучение взрослых</a>
+                      <a href="German.html">Обучение немецкому языку</a>
+                </div>
+                </div>
+                <div class="dropdown">
+                  <button onclick="document.location='D:/Диплом/Camp.html'" class="dropbtn">Летний лагерь</button>
+                </div>
+                
+                <div class="dropdown">
+                  <button onclick="document.location='D:/Диплом/Contacts.html'" class="dropbtn">Контакты</button>
+                </div>
+          </ul>
+        </nav>
+    </header>
+      <div class="Camp">
+        <h1 class="Camph1">Запись в детский городской летний лагерь</h1><br>
+          <div class="container1">
+            <form action="Camp.php" method="post">
+              <div class="onename">  
+                <label id="name_wrap">Имя</label>
+                <input for="fname" type="text" id="fname" name="firstname" placeholder="Иван" required><br>
+              </div>
+              <div class="twoname">
+                <label id="lname_wrap">Фамилия</label>
+                <input type="text" id="lname" name="lastname" placeholder="Иванов" required><br>
+              </div>
+              <div class="threename">
+                <label id="fathername_wrap">Отчество</label>
+                <input type="text" id="fathername" name="fathertname" placeholder="Иванович" required><br>
+              </div>
+              <div class="age">
+                <label id="age_wrap">Возраст обучающегося</label>
+                <input type="text" id="age" name="age"required>
+              </div>
+          </div>
+
+          <div class="container2">
+            <label class="containerL">Городской лагерь. 1 смена: 6 июня - 17 июня "Шпиомания"
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+                    
+            <label class="containerL">Городской лагерь. 2 смена: 20 июня - 1 июля "Город профессий"
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+                      
+            <label class="containerL">Городской лагерь. 3 смена: 4 июля - 15 июля "Пираты в поисках сокровищ"
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+                      
+            <label class="containerL">Городской лагерь. 4 смена: 18 июля - 29 июля "Космические путешествия"
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="containerL">Городской лагерь. 5 смена: 1 августа - 12 августа "В гостях у английской королевы"
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="containerL">Городской лагерь. 6 смена: 15 августа - 27 августа "Научная лаборатория"
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="container2">
+                  
+            <label class="container">Водопроводная, 36 (Центральная площадь)
+              <input type="radio" name="radio">
+              <span class="checkmark2"></span>
+            </label>
+
+            <label class="container">Локомотивная, 79/1 (Остановка "Магазин Маяк")
+              <input type="radio" name="radio">
+              <span class="checkmark2"></span>
+            </label>
+
+            <label class="container">Транспортная, 84 (Московский тракт)
+              <input type="radio" name="radio">
+              <span class="checkmark2"></span>
+            </label>
+          </div>
+
+          <div class="container2">
+                    
+            <div class="number">  
+              <label id="num_wrap">Номер телефона</label>
+              <input type="text" id="num" name="num" required><br>
+            </div>
+            <input type="button" id="hider" value="Отправить заявку" class="button_reg">
+            <div id="text" hidden="true" class="text_reg">Заявка успено отправлена. Администратор свяжится с вами в ближайшее время!</div>
+          <script>
+            document.getElementById('hider').onclick = function() {
+            document.getElementById('text').hidden = false;}
+          </script>
+              </form>
+          </div>
+      </div>
+    </body>
+     <footer>
+        <div class="footer">
+            <table class="tb">
+                <tr><td>© 2021 ООО "Школа иностранных <br> языков "Альбион"</td></tr>
+                <tr><td>Лицензии от 03.06.2014 №0085 <br> и от 19.03.2018 №015</td></tr>
+            </table>
+            <table class="tb">
+                <tr><td>+7 (3452) 997-808</td></tr>
+                <tr><td>Viber +7 (992) 303-84-06</td></tr>
+                <tr><td>WhatsApp +7 (992) 303-84-06</td></tr>
+                <tr><td>507808@bk.ru</td></tr>
+            </table>
+            <table class="tb">
+                <tr><td>ул. Водопроводная, 36,<br> подъезд 2, этаж 2,<br> г.Тюмень, 625000, Россия</tr>
+            </table>
+            
+        </div>
+     </footer>
+</HTML>
+
+
+
+
+
+
+
+    

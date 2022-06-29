@@ -1,0 +1,228 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body 
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 252, 234);
+    color: #000;
+}
+.header 
+{
+    height: 230px;
+    width: 100%;
+    padding: 10px 29px;
+    z-index: 1;
+}
+.head1 
+{
+    display: flex;
+    padding-left: 8%;
+    border-bottom:2px ridge;
+    text-align:center;
+    color:rgb(43, 39, 39);
+    width:100%;
+    margin-left: 5%;
+}
+.FotoAlbion 
+{
+    width: 150px;
+    height: 150px;
+    margin-left: 200px;
+}
+.name 
+{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-style: oblique;
+}
+.table 
+{
+    border-spacing: 10px 8px;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 16px;
+}
+.tblhours
+{
+    line-height: normal;
+    border-spacing: 10px 8px;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 18px;
+}
+.button 
+{
+    margin-top: 45px;
+    margin-left: 60px;
+    border-radius: 9px;
+    border: 1px solid;
+    height: 40px;
+    width: 180px;
+    font-size: 18px;
+    font-style: italic;
+    background-color: rgb(128, 221, 120);
+}
+.nav 
+{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.ul 
+{
+    display: flex;
+    padding: 2px 20%;
+    font-style: italic;
+    font-size: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+.hotbar 
+{
+    text-decoration: none;
+}
+/* Выпадающий список */
+.dropbtn 
+{
+    background-color: transparent;
+    padding: 16px;
+    font-style: italic;
+    font-size: 22px;
+    border: none;
+    color: #000;
+    text-decoration: none;
+}
+.dropdown:hover .dropbtn 
+{   
+    background-color: #6ed171;
+    text-decoration: underline;
+}
+/* Контейнер div */
+.dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающий список (скрыт по дефолту) */
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    z-index: 1;
+    font-size: 20px;
+    width: 250px;
+    text-align: center;
+}
+/* Строки внутри выпадающего контейнера */
+.dropdown-content a 
+{
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+/* Цвет при наведении на строку в выпадающем меню */
+.dropdown-content a:hover 
+{
+    background-color: #ddd;
+    text-decoration: underline;
+}
+/* Показываеть выпадающее меню при наведении */
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+.maph1
+{
+    text-align: center;
+    margin-top: 3%;
+}
+.maps
+{
+    margin-top: 1%;
+}
+.map1
+{
+    margin-left: 20%;
+    float: left;
+}
+.map2
+{
+    margin-left: 50%;
+}
+.map3
+{
+    margin-left: 20%;
+    float: left;
+    margin-top: 1%;
+}
+.map4
+{
+    margin-left: 50%;
+    margin-top: 1%;
+}
+.block1
+{
+    margin-top: 3%;
+}
+.table1
+{
+    margin-left: 20%;
+    float: left;
+    font-size: 20px;
+}
+.table2
+{
+    margin-left: 50%;
+    font-size: 20px;
+    
+}
+.block2
+{
+    margin-top: 3%;
+}
+.table3
+{
+    margin-left: 20%;
+    float: left;
+    font-size: 20px;
+}
+.table4
+{
+    margin-left: 50%;
+    font-size: 20px;
+}
+.footer
+{
+    float:left;
+    top:700px;
+    width:100%;
+    margin-top: 3%;
+    height:100%;
+    border-top:2px ridge;
+    text-align:center;
+    background: rgb(207, 204, 199);
+    font-size:12pt;
+    text-align: center;
+    display: flex;
+    
+}
+.tb 
+{
+    border-spacing: 10px 8px;
+    margin-top: 15px;
+    margin-left: 15%;
+}
+

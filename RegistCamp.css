@@ -1,0 +1,377 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body 
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 252, 234);
+    color: #000;
+}
+.header 
+{
+    height: 230px;
+    width: 100%;
+    padding: 10px 29px;
+    z-index: 1;
+}
+.head1 
+{
+    display: flex;
+    padding-left: 8%;
+    border-bottom:2px ridge;
+    text-align:center;
+    color:rgb(43, 39, 39);
+    width:100%;
+    margin-left: 5%;
+}
+.FotoAlbion 
+{
+    width: 150px;
+    height: 150px;
+    margin-left: 200px;
+}
+.name 
+{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-style: oblique;
+}
+.table 
+{
+    border-spacing: 10px 8px;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 16px;
+}
+.tblhours
+{
+    line-height: normal;
+    border-spacing: 10px 8px;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 18px;
+}
+.button 
+{
+    margin-top: 45px;
+    margin-left: 60px;
+    border-radius: 9px;
+    border: 1px solid;
+    height: 40px;
+    width: 180px;
+    font-size: 18px;
+    font-style: italic;
+    background-color: rgb(128, 221, 120);
+}
+.nav 
+{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.ul 
+{
+    display: flex;
+    padding: 2px 20%;
+    font-style: italic;
+    font-size: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+.hotbar 
+{
+    text-decoration: none;
+}
+/* Выпадающий список */
+.dropbtn
+{
+    background-color: transparent;
+    padding: 16px;
+    font-style: italic;
+    font-size: 22px;
+    border: none;
+    color: #000;
+    text-decoration: none;
+}
+.dropdown:hover .dropbtn 
+{   
+    background-color: #6ed171;
+    text-decoration: underline;
+}
+/* Контейнер div */
+.dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+/* Выпадающий список (скрыт по дефолту) */
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    z-index: 1;
+    font-size: 20px;
+    width: 250px;
+    text-align: center;
+}
+/* Строки внутри выпадающего контейнера */
+.dropdown-content a 
+{
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+/* Цвет при наведении на строку в выпадающем меню */
+.dropdown-content a:hover 
+{
+    background-color: #ddd;
+    text-decoration: underline;
+}
+/* Показываеть выпадающее меню при наведении */
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+.Camph1
+{
+    text-align: center;
+}
+/* Стиль ввода type="text" */
+input[type=text], select, textarea {
+    width: 500px; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #f2f2f2; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+/* Добавляет задний фон заполняемым строкам */
+.container1 
+{
+    border-radius: 5px;
+    width: 1000px;
+    background-color: #ccc;
+    padding: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+label
+{
+    font-size: 20px;
+}
+input
+{
+    font-size: 14px;
+}
+.onename
+{
+    margin-left: 18%;
+}
+.twoname
+{
+    margin-left: 13.7%;
+}
+.threename
+{
+    margin-left: 13.5%;
+}
+.age
+{
+    margin-left: 1.3%;
+}
+.container2 
+{
+    border-radius: 5px;
+    width: 1000px;
+    background-color: #ccc;
+    padding: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 1%;
+}
+/* Customize the label (the container) */
+.containerL 
+{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 18%;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .containerL input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Стиль квадрата отметки */
+  .checkmark 
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  /* Цвет отметки при наведении мышки */
+  .containerL:hover input ~ .checkmark {
+    background-color: rgb(59, 61, 192);
+  }
+  
+  /* Цвет квадрата при отметки */
+  .containerL input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Показывать отметку при проверке */
+  .containerL input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Цвет галочки */
+  .containerL .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 18%;
+  }
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  /* Create a custom radio button */
+.checkmark2 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+  
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark2 {
+    background-color: rgb(59, 61, 192);
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark2 {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark2:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark2:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark2:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+.number
+{
+    margin-left: 7%;
+}
+.button_reg
+{
+    border-radius: 9px;
+    border: 1px solid;
+    height: 40px;
+    width: 180px;
+    font-size: 18px;
+    font-style: italic;
+    background-color: rgb(128, 221, 120);
+}
+.text_reg
+{
+    font-size: 24px;
+    color: #027906;
+    margin-top: 1%;
+}
+.footer
+{
+    float:left;
+    top:700px;
+    width:100%;
+    margin-top: 3%;
+    height:100%;
+    border-top:2px ridge;
+    text-align:center;
+    background: rgb(207, 204, 199);
+    font-size:12pt;
+    text-align: center;
+    display: flex;
+}
+.tb 
+{
+    border-spacing: 10px 8px;
+    margin-top: 15px;
+    margin-left: 15%;
+}
+
